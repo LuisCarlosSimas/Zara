@@ -128,10 +128,10 @@ function finalizarCompra(evento){
     const historicoDePedidosAtualizado=[pedidoFeito, ...historicoDePedidos];
     salvarLocalStorage("historico", historicoDePedidosAtualizado);
     apagarDoLocalStorage("carrinho");
-    window.location.href = "file:///D:/luisc/Documents/cursojs/%23/zara/html/pedidos.html";
+    window.location.href = "pedidos.html";
 };
 
-
+window.alert("Site Ilustrativo! Nenhuma compra sera realizada! Site Não Oficial! Em capos obrigatorios, qualquer informação serve!")
 desenharProdutosCheckout();
 atualizarPreco();
 document.addEventListener("submit", (evt) => finalizarCompra(evt));
