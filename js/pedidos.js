@@ -118,5 +118,5 @@ function rederizarHistoricoPedidos(){
     }
 };
 
-
+window.alert("Site Ilustrativo! Nenhuma compra foi realizada! Nunhum dado foi armazenado! Site Não Oficial!")
 rederizarHistoricoPedidos();
