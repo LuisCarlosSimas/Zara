@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/png">
+    <title>Zara</title>
+    <link href="../css/style-checkout.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <a href="file:///D:/luisc/Documents/cursojs/%23/zara/index.html">
+            <img src="../images/logoSemFundo.png" alt="Logo da marca ZARA">
+        </a>    
+    </header>
+    <form>
+        <section id="dados-usuario">
+            <p>Seus Dados</p>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Nome da Silva" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="meu-email@hotmail.com" required>
+            </div>
+            <div>
+                <label for="telefone">Telefone de Contato</label>
+                <input type="tel" id="telefone" placeholder="(47) 99887-7665" required> 
+            </div>
+        </section>
+        <section id="pagamento-entrega">
+            <p>Pagamento e Entrega</p>
+            <div class="div-unica-inline">
+                <label for="numero-cartao">Número do Cartão</label>
+                <input type="text" id="numero-cartao" placeholder="1234 5678 9101 1121" required style=>
+            </div>
+            <div class="div-dupla">
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" placeholder="123" required>
+                </div>
+                <div>
+                    <label for="data-expiracao">Data de Validade</label>
+                    <input type="date" id="data-expiracao" placeholder="DD/MM/AAAA" required>
+                </div>
+            </div>
+            <div class="div-unica-inline">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="12345-678" required>
+            </div>
+            <div class="div-unica-inline">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="Rua: Nome da Minha Rua" required>
+            </div>
+            <div class="div-dupla">
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" placeholder="123" required>
+                </div>
+                <div>
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" placeholder="Bloco: A, ap:123">
+                </div>
+            </div>
+        </section>
+        <section id="produtos-checkout">
+            <section id="container-produtos-checkout">
+                <!--Vem do JS-->
+            </section>
+            <section id="celula-checkout">
+                <p id="preco-total">Total: $0</p>
+                <button id="finalizar-compra-checkout" type="submit">Finalizar Compra</button>
+            </section>
+        </section>
+    </form>
+    <script src="../js/checkout.js"></script>
+</body>
+</html>

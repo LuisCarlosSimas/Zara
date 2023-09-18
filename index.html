@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/jpg">
+    <title>Zara</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <section id="carrinho">
+        <div id="meu-carrinho">
+            <p style="font-weight: bold;">Meu Carrinho</p>
+            <button id="fechar-carrinho"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+        <section id="produtos-carrinho">
+            <!--vem do JS-->
+        </section>
+        <p id="preco-total">Total: $0</p>
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </section>
+    <header>
+        <a href="file:///D:/luisc/Documents/cursojs/%23/zara/index.html">
+            <img src="images/logoSemFundo.png" alt="Logo da marca ZARA">
+        </a>
+        <div id="botoes-cabecalho">
+            <a style="text-decoration: none;" href="file:///D:/luisc/Documents/cursojs/%23/zara/html/pedidos.html">
+                <button><i class="fa-solid fa-user"></i></button>
+            </a>
+            <button id="abrir-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </header>
+    <main>
+        <section id="filtros">
+            <input id="exibir-todos" type="radio" name="filtro" checked>
+            <label for="exibir-todos">Todos</label>
+            <input id="exibir-masculinos" type="radio" name="filtro">
+            <label for="exibir-masculinos">Masculinos</label>
+            <input id="exibir-femininos" type="radio" name="filtro">
+            <label for="exibir-femininos">Femininos</label>
+        </section>
+        <section id="container-produto">
+            <!--vem do JS-->
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
