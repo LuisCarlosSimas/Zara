@@ -103,7 +103,7 @@ function inicializarCarrinho(){
     botaoAbrirCarrinho.addEventListener("click", abrirCarrinho);
     botaoIrParaCheckout.addEventListener("click", irParaCheckout);
     botaoCorpo.addEventListener("click", function(event) {
-        if (event.target.tagName!=="BUTTON" && event.target.tagName!=="I" && event.target.id!=="filtros" && !(target.tagName === "LABEL" && target.querySelector("input"))) {
+        if (event.target.tagName!=="BUTTON" && event.target.tagName!=="I" && event.target.id!=="filtros" && !(event.target.tagName === "LABEL" && event.target.querySelector("input"))) {
             fecharCarrinho();
         };
     });
