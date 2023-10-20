@@ -90,7 +90,7 @@ function lerLocalStorage(chave){
 
 function criarPedidoHistorico(pedidoComData){
     const elementoPedido = `
-        <p style="font-weight: bold;">${new Date(pedidoComData.dataPedido).toLocaleDateString('pt-BR', {hour:"2-digit", minute:"2-digit",})}</p>
+        <p>${new Date(pedidoComData.dataPedido).toLocaleDateString('pt-BR', {hour:"2-digit", minute:"2-digit",})}</p>
         <section id="container-pedidos-${pedidoComData.dataPedido}">
         
         </section>
@@ -118,5 +118,5 @@ function rederizarHistoricoPedidos(){
     }
 };
 
-window.alert("Site Ilustrativo! Nenhuma compra foi realizada! Nunhum dado foi armazenado! Site Não Oficial!")
+window.alert("Site Ilustrativo, Não Oficial!")
 rederizarHistoricoPedidos();
