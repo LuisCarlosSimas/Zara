@@ -137,7 +137,7 @@ function desenharProdutoNoCarrinho(idProduto){
     const elementoArticle = document.createElement('article'); // <article></article>
     const cartaoProdutoCarrinho=`
         <button id="remover-item-${produto.id}"><i class="fa-solid fa-circle-xmark"></i></button>
-        <img src="images/${produto.imagem}" alt="Carrinho: ${produto.nome}" style="height: 100px; border-radius: 20px;">
+        <img src="images/${produto.imagem}" alt="Carrinho: ${produto.nome}">
         <div id="texto-card-produto-carrinho-${produto.id}">
             <p id="texto-nome-${produto.id}">${produto.nome}</p>
             <p id="texto-tamanho-${produto.id}">Tamanho Unico</p>
@@ -246,7 +246,7 @@ function irParaCheckout(){
     if(Object.keys(idsProdutoCarrinhoComQuantidade).length === 0){
         return;
     };
-    window.location.href = "html/checkout.html";
+    window.location.href = "../html/checkout.html";
 };
 
 window.alert("Site Ilustrativo! Nenhuma compra sera realizada! Site Não Oficial!")
