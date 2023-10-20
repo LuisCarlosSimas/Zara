@@ -128,10 +128,10 @@ function finalizarCompra(evento){
     const historicoDePedidosAtualizado=[pedidoFeito, ...historicoDePedidos];
     salvarLocalStorage("historico", historicoDePedidosAtualizado);
     apagarDoLocalStorage("carrinho");
-    window.location.href = "pedidos.html";
+    window.location.href = "../html/pedidos.html";
 };
 
-window.alert("Site Ilustrativo! Nenhuma compra sera realizada! Site Não Oficial! Em capos obrigatorios, qualquer informação serve!")
+window.alert("Site Ilustrativo! Nenhuma compra sera realizada! Site Não Oficial! Não é necessario informar dados verídicos!")
 desenharProdutosCheckout();
 atualizarPreco();
 document.addEventListener("submit", (evt) => finalizarCompra(evt));
