@@ -229,7 +229,7 @@
         display: flex;
         justify-content: space-between;
     }#meu-carrinho p{
-        font-size: 150%;
+        font-size: 125%;
         margin-block-start: 0.5em;
         margin-block-end: 0.5em;
     }#fechar-carrinho{
@@ -298,7 +298,6 @@
         padding-inline: 10px;
         padding-block: 10px;
     }#filtros{
-        font-size: 125%;
         padding-top: 20px;
         padding-bottom: 40px;
     }#filtros input[type="radio"]{
@@ -340,6 +339,8 @@
         border-radius: 10px; 
         border: transparent;
         margin-top: 10px;
+        transition: background-color 0.5s;
+        transition: font-size 0.5s;
     }
 
     #produtos-carrinho article{
@@ -367,19 +368,19 @@
     }p[id^="texto-nome-"]{
         margin-block-start: 0em; 
         margin-block-end: 0em; 
-        font-size: 20px; 
+        font-size: 13px; 
         padding-top: 20px; 
         padding-left: 5px;
     }p[id^="texto-tamanho-"]{
         margin-block-start: 0em; 
         margin-block-end: 0em; 
-        font-size: 20px; 
+        font-size: 13px; 
         color: grey;
         padding-left: 5px; 
     }p[id^="texto-preco"]{
         margin-block-start: 0em; 
         margin-block-end: 0em; 
-        font-size: 25px; 
+        font-size: 20px; 
         color: rgb(91, 153, 91);
         padding: 5px; 
     }
@@ -391,7 +392,7 @@
         right: 2px; 
         margin-top: 2px;
     }button[id^="decrementar-produto-"]{
-        height: 25px; 
+        height: 20px; 
         width: 50px;
         background-color: transparent;
         font-size: 20px; 
@@ -399,10 +400,10 @@
     }p[id^="quantidade-"]{
         margin-block-start: 0em; 
         margin-block-end: 0em; 
-        font-size: 20px; 
+        font-size: 16px; 
         margin-left: 2px;
     }button[id^="incrementar-produto-"]{
-        height: 25px; 
+        height: 20px; 
         width: 50px;
         background-color: transparent;
         font-size: 20px; 
