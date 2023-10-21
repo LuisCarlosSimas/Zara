@@ -84,7 +84,20 @@ function rederizarCatalogo() {
     };
     for (const produtoCatalogo of catalogo) {
         document.getElementById(`adicionar-${produtoCatalogo.id}`).addEventListener("click", ()=> addCarrinho(produtoCatalogo.id));
+        document.getElementById(`adicionar-${produtoCatalogo.id}`).addEventListener("click", ()=> mudaCor(produtoCatalogo.id));
     };
+};
+
+function mudaCor(idProduto){
+    var botao=document.getElementById(`adicionar-${idProduto}`);
+    botao.style.removeProperty("background-color");
+    botao.style.setProperty("background-color", "rgb(118, 183, 118)");
+    botao.innerHTML='<i class="fa-solid fa-check"></i>'
+    setTimeout(function() {
+        botao.style.removeProperty("background-color");
+        botao.style.setProperty("background-color", "rgb(244, 197, 223)")
+        botao.innerHTML='<i class="fa-solid fa-cart-plus"></i>'
+    }, 500);
 };
 
 function abrirCarrinho() {
@@ -246,7 +259,7 @@ function irParaCheckout(){
     if(Object.keys(idsProdutoCarrinhoComQuantidade).length === 0){
         return;
     };
-    window.location.href = "html/checkout.html";
+    window.location.href = "../html/checkout.html";
 };
 
 window.alert("Site Ilustrativo! Nenhuma compra sera realizada! Site Não Oficial!")
