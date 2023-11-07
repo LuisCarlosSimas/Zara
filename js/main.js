@@ -259,7 +259,7 @@ function irParaCheckout(){
     if(Object.keys(idsProdutoCarrinhoComQuantidade).length === 0){
         return;
     };
-    window.location.href = "../html/checkout.html";
+    window.location.href = "html/checkout.html";
 };
 
 window.alert("Site Ilustrativo! Nenhuma compra sera realizada! Site Não Oficial!")
